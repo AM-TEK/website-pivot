@@ -1,0 +1,323 @@
+
+
+/* Styles for the first container */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+}
+.container {
+  display: flex;
+  background-color: #faf7f5;
+}
+.left-column {
+  flex: 0 0 20%;
+  padding: 20px;
+  background-color: #e4deda;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.right-column {
+  flex: 1;
+  padding: 20px;
+}
+.pivot-logo {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin-left: 0;
+  margin-right: auto;
+}
+.profile-image {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: 0 auto 20px;
+}
+h1, h2, h3 {
+  font-family: 'Merriweather', serif;
+  font-weight: 100;
+  letter-spacing: -0.9px;
+}
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 1.8em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.right-column h2 {
+  border-bottom: 1px solid #746151;
+  padding-bottom: 10px;
+}
+h3 {
+  color: #746151;
+}
+.tagline {
+  font-style: italic;
+  margin-top: 0;
+  color: #746151;
+}
+ul {
+  padding-left: 20px;
+}
+.services li, .hr-services li {
+  margin-bottom: 5px;
+}
+.contact {
+  margin-top: 20px;
+}
+.bio {
+  font-size: 0.9em;
+}
+/* Styles for the second container */
+.container-two {
+  background-color: #faf7f5;
+  font-family: Georgia, serif;
+  margin-top: 20px;
+}
+.content-row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 80px;
+}
+.number {
+  font-size: 6em;
+  color: #848A34;
+  font-weight: bold;
+  line-height: 1;
+  margin-right: 20px;
+  flex: 0 0 auto;
+}
+.content-section {
+  flex: 1;
+}
+.container-two h1 {
+  font-size: 2.5em;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #333;
+}
+.container-two h2 {
+  font-size: 1.8em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #746151;
+  font-style: italic;
+}
+.container-two p {
+  margin-bottom: 20px;
+  color: #444;
+}
+.container-two .book {
+  display: flex;
+  margin-bottom: 30px;
+}
+.container-two .book img {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+}
+.container-two .book-info h2 {
+  margin-top: 0;
+  color: #746151;
+  font-style: normal;
+}
+.container-two .book-info h3 {
+  color: #000;
+  margin: 5px 0 10px;
+  font-weight: normal;
+}
+.container-two blockquote {
+  font-style: italic;
+  color: #746151;
+  font-size: 20px;
+  margin-left: 0;
+  font-family: 'Merriweather', serif;
+}
+.container-two .author {
+  text-align: left;
+  color: #675;
+}
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+  .left-column {
+      padding: 10px;
+  }
+  .right-column {
+      padding: 15px;
+  }
+  .pivot-logo {
+      max-width: 75%;
+      margin: 0 auto 15px;
+  }
+  .profile-image {
+      max-width: 200px;
+  }
+  .container-two {
+      padding: 0 15px;
+  }
+  .content-row {
+      flex-direction: column;
+      margin-bottom: 40px;
+  }
+  .number {
+      font-size: 4em;
+      margin-bottom: 10px;
+  }
+  .container-two .book {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  .container-two .book img {
+      width: auto;
+      height: 150px;
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+  .container-two .book-info {
+      width: 100%;
+  }
+}
+
+/* Testimonials Section */
+.testimonials {
+  background-color: #faf7f5;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.testimonials h2 {
+  border-bottom: 1px solid #746151;
+  padding-bottom: 10px;
+  color: #333;
+}
+
+/* Style each testimonial as a card */
+.testimonials blockquote {
+  position: relative;
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  color: #444;
+  background-color: #fff;
+  margin: 40px 0;
+  padding: 40px;
+  line-height: 1.6;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid #333;
+}
+
+/* Opening double quote */
+.testimonials blockquote::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 5px; /* Adjusted to provide spacing */
+  width: 60px; /* Combined width for both quotes */
+  height: 40px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M70 20C45 20 30 35 30 60c0 15 10 25 22 25 12 0 20-8 20-18 0-10-7-16-15-16-4 0-8 1-11 4 0-15 10-25 25-25 3 0 6 0 8 1l-3-10c-2-1-4-1-6-1z' fill='%23848A34'/%3E%3C/svg%3E"),
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M70 20C45 20 30 35 30 60c0 15 10 25 22 25 12 0 20-8 20-18 0-10-7-16-15-16-4 0-8 1-11 4 0-15 10-25 25-25 3 0 6 0 8 1l-3-10c-2-1-4-1-6-1z' fill='%23848A34'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left, right; /* Position the quotes side by side */
+}
+
+/* Closing double quote */
+.testimonials blockquote::after {
+  content: '';
+  position: absolute;
+  bottom: 15px;
+  right: 5px; /* Adjusted to provide spacing */
+  width: 60px; /* Combined width for both quotes */
+  height: 40px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M30 80C55 80 70 65 70 40c0-15-10-25-22-25-12 0-20 8-20 18 0 10 7 16 15 16 4 0 8-1 11-4 0 15-10 25-25 25-3 0-6 0-8-1l3 10c2 1 4 1 6 1z' fill='%23848A34'/%3E%3C/svg%3E"),
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M30 80C55 80 70 65 70 40c0-15-10-25-22-25-12 0-20 8-20 18 0 10 7 16 15 16 4 0 8-1 11-4 0 15-10 25-25 25-3 0-6 0-8-1l3 10c2 1 4 1 6 1z' fill='%23848A34'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left, right; /* Position the quotes side by side */
+}
+
+/* Add padding to prevent text from overlapping with quotes */
+.testimonials blockquote p {
+  position: relative;
+  margin: 0;
+  padding: 0 30px;
+}
+
+/* Cite styling */
+.testimonials cite {
+  display: block;
+  text-align: right;
+  color: #746151;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.9em;
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding-right: 40px;
+}
+
+/* Add some spacing between testimonials */
+.testimonials blockquote + blockquote {
+  margin-top: 40px;
+}
+
+/* icf badge */
+.badge {
+  width: 120px;
+  margin-top: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Speaker Events Section */
+.speaker-events {
+  background-color: #faf7f5;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.speaker-events h2 {
+  border-bottom: 1px solid #746151;
+  padding-bottom: 10px;
+  color: #333;
+}
+
+.events-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+  gap: 20px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .events-gallery {
+      grid-template-columns: repeat(2, 1fr); /* 2 images per row on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .events-gallery {
+      grid-template-columns: 1fr; /* 1 image per row on small screens */
+  }
+}
+
+
+.event-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
